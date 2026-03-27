@@ -261,13 +261,14 @@ Error generating stack: `+e.message+`
           border: 1px solid transparent;
           transition: all var(--transition-fast);
           text-align: left;
-          background-color: rgba(254, 240, 138, 0.35); /* 淡黃色 */
+          background-color: #546E7A; /* 灰藍色 */
+          color: #ffffff;
         }
 
         .location-btn:hover {
-          background: rgba(16, 185, 129, 0.08);
-          color: var(--secondary);
-          border-color: rgba(16, 185, 129, 0.2);
+          background-color: #455A64;
+          color: #ffffff;
+          border-color: transparent;
         }
 
         .location-btn.unclickable {
@@ -275,13 +276,13 @@ Error generating stack: `+e.message+`
         }
 
         .location-btn.unclickable:hover {
-          background: rgba(0, 0, 0, 0.04);
-          color: var(--text-secondary);
+          background-color: #546E7A;
+          color: #ffffff;
           border-color: transparent;
         }
 
         .detail-icon {
-          opacity: 0.7;
+          opacity: 0.9;
         }
         
         .location-btn:hover .detail-icon {
@@ -289,11 +290,17 @@ Error generating stack: `+e.message+`
         }
 
         .transport-text {
-          color: var(--text-muted);
+          color: #065F46; /* 墨綠色字體 */
         }
 
         .method-item {
-          background-color: rgba(167, 243, 208, 0.35); /* 淡綠色 */
+          background-color: transparent;
+          border: 1.5px solid #065F46; /* 墨綠色外框 */
+          color: #065F46;
+        }
+        
+        .method-item .transport-icon {
+          color: #065F46;
         }
 
         @media (max-width: 600px) {
