@@ -261,6 +261,7 @@ Error generating stack: `+e.message+`
           border: 1px solid transparent;
           transition: all var(--transition-fast);
           text-align: left;
+          background-color: rgba(254, 240, 138, 0.35); /* 淡黃色 */
         }
 
         .location-btn:hover {
@@ -289,6 +290,10 @@ Error generating stack: `+e.message+`
 
         .transport-text {
           color: var(--text-muted);
+        }
+
+        .method-item {
+          background-color: rgba(167, 243, 208, 0.35); /* 淡綠色 */
         }
 
         @media (max-width: 600px) {
